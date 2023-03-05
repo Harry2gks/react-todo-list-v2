@@ -7,16 +7,10 @@ export default class TodoList extends Component {
     super(props);
     this.state = { todos: [] };
     this.create = this.create.bind(this);
-    this.remove = this.remove.bind(this);
   }
   create(newTodo) {
     this.setState({
       todos: [...this.state.todos, newTodo],
-    });
-  }
-  remove(id) {
-    this.setState({
-      todos: this.state.todos.filter((t) => t.id !==id),
     });
   }
   render() {
@@ -25,7 +19,6 @@ export default class TodoList extends Component {
       key={t.id} 
       id={t.id} 
       task={t.task} 
-      removeTodo={this.remove}
       />;
     });
     return (
