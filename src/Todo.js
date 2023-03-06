@@ -3,17 +3,17 @@ import React, { Component } from 'react'
 export default class Todo extends Component {
     constructor(props) {
         super(props);
-        this.handleRemove = this.handleRemove.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
     }
-    handleRemove() {
-      this.props.removeTodo(this.props.id)
+    handleDelete() {
+      this.props.deleteTodo(this.props.id)
     }
   render() {
     return (
       <div>
         <li>{this.props.task}</li>
         <button>Edit</button>
-        <button onClick={this.handleRemove}>Delete</button>
+        <button onClick={this.handleDelete}>Delete</button>
       </div>
     )
   }
