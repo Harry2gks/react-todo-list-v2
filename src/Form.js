@@ -16,13 +16,13 @@ export default class Form extends Component {
     handleSubmit(evt) {
         evt.preventDefault();
         this.props.createNewTodo({ ...this.state, id:uuidv4() });
-        this.setState({task:""})
+        this.setState({ task:"" });
     }  
   render() {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-            <label htmlFor='Form'></label>
+            <label htmlFor='task'></label>
             <input
               type="text"
               placeholder='Add To Do'
@@ -34,6 +34,6 @@ export default class Form extends Component {
             <button>Add Todo</button>
         </form>
       </div>
-    )
+    );
   }
 }
