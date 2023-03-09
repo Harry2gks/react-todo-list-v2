@@ -15,7 +15,7 @@ export default class Form extends Component {
   }
   handleSubmit(evt) {
     evt.preventDefault();
-    this.props.createNewTodo({ ...this.state, id: uuidv4() });
+    this.props.createNewTodo({ ...this.state, id: uuidv4(), completed: false });
     this.setState({ task: "" });
   }
   render() {
