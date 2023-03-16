@@ -1,74 +1,38 @@
-.completed{
-    color: gray;
-    text-decoration: line-through;
+.App {
+  text-align: center;
 }
 
-.container {
-    display: block;
-    width: 500px;
-    margin: 10px auto 100px;
-    background-color: #cc9797;
-    padding: 0px 10px 10px 10px;
-    border-radius: 10px;
-    text-align: center;
-    color: #7b0e0e;
-    font-size: 18px;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
-
-ul {
-    list-style: none;
 }
 
-li {
-    margin: 10px;
-    font-size: 22px;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-li:hover {
-    cursor: pointer;
+.App-link {
+  color: #61dafb;
 }
 
-ul button {
-    padding: 2px 2px 2px 2px;
-    margin: 2px 4px 2px 4px;
-    font-size: 18px;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-button {
-    background: #7b0e0e;
-    background-image: -webkit-linear-gradient(top, #7b0e0e, #7a0e40);
-    background-image: -moz-linear-gradient(top, #7b0e0e, #7a0e40);
-    background-image: -ms-linear-gradient(top, #7b0e0e, #7a0e40);
-    background-image: -o-linear-gradient(top, #7b0e0e, #7a0e40);
-    background-image: linear-gradient(to bottom, #7b0e0e, #7a0e40);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    -webkit-box-shadow: 0px 1px 3px #524d52;
-    -moz-box-shadow: 0px 1px 3px #524d52;
-    box-shadow: 0px 1px 3px #524d52;
-    font-family: Arial;
-    color: #ebbcbc;
-    font-size: 20px;
-    padding: 4px 4px 4px 4px;
-    text-decoration: none;
-}
-
-button:hover {
-    background: #c91818;
-    background-image: -webkit-linear-gradient(top, #c91818, #610c34);
-    background-image: -moz-linear-gradient(top, #c91818, #610c34);
-    background-image: -ms-linear-gradient(top, #c91818, #610c34);
-    background-image: -o-linear-gradient(top, #c91818, #610c34);
-    background-image: linear-gradient(to bottom, #c91818, #610c34);
-    text-decoration: none;
-}
-
-input {
-    padding: 5px;
-    margin: 0px 20px;
-    border-radius: 8px;
-    background-color: #e7bcbc;
-    color: #7b0e0e;
-}
-
